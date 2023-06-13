@@ -1,0 +1,29 @@
+.statisticsList {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style: none;
+    padding-left: 0;
+    gap: 10px;
+}
+
+.statisticsItem {
+    font-weight: 600;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid red; */
+    padding: 5px 5px;
+}
+
+.emodji {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-right: 15px;
+}
+
+.statistics {
+    display: flex;
+    flex-direction: column;
+}
