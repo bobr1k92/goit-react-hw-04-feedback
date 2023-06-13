@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import css from './Feedback.module.css';
 
 const Controls = ({ options, onLeaveFeedback }) => (
@@ -15,5 +16,10 @@ const Controls = ({ options, onLeaveFeedback }) => (
     ))}
   </ul>
 );
+
+Controls.propTypes = {
+  onLeaveFeedback: PropTypes.func.isRequired,
+  options: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
+};
 
 export default Controls;

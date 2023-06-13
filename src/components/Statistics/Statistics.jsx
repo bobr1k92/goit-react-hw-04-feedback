@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import {
   BsEmojiSmile,
   BsEmojiNeutral,
@@ -41,3 +42,11 @@ export const Statistics = ({ good, neutral, bad, total, percent }) => (
     </li>
   </ul>
 );
+
+Statistics.propTyps = {
+  good: PropTypes.number.isRequired,
+  neutral: PropTypes.number.isRequired,
+  bad: PropTypes.number.isRequired,
+  total: PropTypes.number.isRequired,
+  positivePercentage: PropTypes.number.isRequired,
+};
